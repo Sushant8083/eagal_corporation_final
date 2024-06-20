@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required Meta Tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Document Title, Description, and Author -->
+    <title>EAGLE CORPORATION</title>
+    <meta
+      name="description"
+      content="Concept is a Bootstrap 5 Portfolio Template."
+    />
+    <meta name="author" content="BootstrapBrain" />
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/fevegal.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/fevegal.png"
+    />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="/stylesheets/concept-bsb.css" />
+
+    <!-- BSB Head -->
+  </head>
+
+  <style>
+    body {
+      font-family: cralika !important;
+      color: #245656 !important;
+    }
+    .custom-button {
+      font-weight: bold;
+      color: #245656;
+      border: 1px solid #245656;
+      border-radius: 30px;
+      padding: 5px 15px;
+      background-color: transparent;
+    }
+    .custom-button:hover {
+      background-color: #245656;
+      color: white;
+    }
+    .service-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .service-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      width: 300px;
+      height: 400px;
+      flex: 1 1 300px;
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .service-card .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.194);
+      color: white;
+      padding: 10px;
+      text-align: start;
+    }
+
+    #smallsection {
+      margin-top: 30px;
+      width: 100%;
+      height: 250px;
+      background-color: #245656;
+    }
+
+    @media (max-width: 768px) {
+      .service-card {
+        width: 45%;
+        flex: 1 1 45%;
+      }
+
+      #smallsection {
+        padding: 18px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .service-card {
+        width: 100%;
+        flex: 1 1 100%;
+      }
+
+      #smallsection {
+        padding: 18px;
+      }
+    }
+
+    .btn-more-services {
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+    }
+  </style>
+
+  <body>
+    <!-- Header -->
+    <%-include('./head/header.ejs')%>
+
+    <!-- Hero 1 - Bootstrap Brain Component -->
+    <section
+      class="bsb-hero-1 px-3 bsb-overlay bsb-hover-pull"
+      style="background-image: url('/images/images\ \(16\)\ \(5\).jpeg.jpg')"
+    >
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div
+            class="col-12 col-md-11 col-lg-9 col-xl-7 col-xxl-6 text-center text-white"
+          >
+            <h1 class="display-4 fw-normal text-start mb-3">
+              Welcome to <br />Eagle Corporation
+            </h1>
+            <p class="lead text-start mb-5">
+              Powerful, extensible, and feature-packed frontend toolkit. Build
+              and customize with Sass, utilize prebuilt grid system and
+              components, and bring projects to life with powerful JavaScript
+              plugins.
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-start">
+              <a href="/contact"
+                ><button
+                  type="button"
+                  class="btn"
+                  style="
+                    background-color: white;
+                    padding: 5px 20px;
+                    border-radius: 30px;
+                  "
+                >
+                  Get Started!
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main -->
+    <main id="main">
+      <!-- Service 1 - Bootstrap Brain Component -->
+      <section class="bg-light py-5 py-md-8 py-xl-10">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+              <h3 class="mb-6 display-6 text-center">How it Works:</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="container overflow-hidden">
+          <div class="row gy-5">
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="text-center px-xl-2">
+                <img
+                  src="/images/300ppi/Asset 4.png"
+                  class="img-fluid"
+                  alt=""
+                  style="max-height: 50px"
+                />
+                <h5 class="m-2">Discovery</h5>
+                <p class="m-0 text-secondary">
+                  We will meet to discuss your desired outcomes and get to know
+                  your design preferences. At this stage, your must haves will
+                  become ours.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="text-center px-xl-2">
+                <img
+                  src="/images/300ppi/Asset 2.png"
+                  class="img-fluid"
+                  alt=""
+                  style="max-height: 50px"
+                />
+                <h5 class="m-2">Design</h5>
+                <p class="m-0 text-secondary">
+                  The vision begins to come to life with a detailed plan of
+                  action. We will share our proposed selections (i.e. fine
+                  furnishings, art, construction finishes) and incorporate your
+                  feedback before we proceed.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="text-center px-xl-2">
+                <img
+                  src="/images/300ppi/Asset 3.png"
+                  class="img-fluid"
+                  alt=""
+                  style="max-height: 50px"
+                />
+                <h5 class="m-2">Delivery</h5>
+                <p class="m-0 text-secondary">
+                  We transform your space with a white glove approach, handling
+                  all components of implementation before inviting you for a
+                  final walk-through
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 py-md-8 py-xl-10">
+        <div class="container py-5">
+          <h2 class="text-center mb-5">Our Services:</h2>
+          <div class="service-container">
+            <div class="service-card">
+              <img
+                src="/images/300ppi/Avrame+Trio.jpeg"
+                alt="Prefabricated wood house"
+              />
+              <div class="overlay">
+                <h6>Prefabricated wood house</h6>
+                <a
+                  href="#"
+                  style="
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                      'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                      'Helvetica Neue', sans-serif;
+                  "
+                  class="text-light"
+                  >View more</a
+                >
+              </div>
+            </div>
+            <div class="service-card">
+              <img
+                src="/images/300ppi/Luxury-home-decor-Aida-A.jpg"
+                alt="Interior design"
+              />
+              <div class="overlay">
+                <h6>Interior design</h6>
+                <a
+                  href="#"
+                  style="
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                      'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                      'Helvetica Neue', sans-serif;
+                  "
+                  class="text-light"
+                  >View more</a
+                >
+              </div>
+            </div>
+            <div class="service-card">
+              <img
+                src="/images/300ppi/PhotoReal_A_beautifully_styled_room_that_exudes_luxury_and_sop_0.jpg"
+                alt="Home furnishing"
+              />
+              <div class="overlay">
+                <h6>Home furnishing</h6>
+                <a
+                  href="#"
+                  style="
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                      'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                      'Helvetica Neue', sans-serif;
+                  "
+                  class="text-light"
+                  >View more</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About 2 - Bootstrap Brain Component -->
+      <section class="py-3 py-md-5">
+        <div class="container">
+          <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-start">
+            <div class="col-12 col-lg-6">
+              <img
+                class="img-fluid rounded"
+                loading="lazy"
+                src="/images/300ppi/Asset 1.png"
+                alt="About 2"
+              />
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="row justify-content-xl-center">
+                <div class="col-12 col-xl-10">
+                  <h1 class="display-5">What is <br />our goal:</h1>
+                  <p
+                    class="lead fs-6 mb-3 mb-xl-5"
+                    style="
+                      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                        'Open Sans', 'Helvetica Neue', sans-serif;
+                      color: black;
+                      font-weight: 400;
+                    "
+                  >
+                    Our goal is to transform your beautiful house into a
+                    luxurious home. Through a multi-faceted approach including
+                    architectural and interior design, our principal designer
+                    will create a space that is uniquely yours
+                  </p>
+
+                  <a href="/contact"
+                    ><button
+                      type="button"
+                      class="btn"
+                      style="
+                        background-color: #245656;
+                        padding: 5px 20px;
+                        border-radius: 30px;
+                        color: white;
+                      "
+                    >
+                      Get Started!
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div
+        id="smallsection"
+        class="d-flex align-items-center justify-content-center gap-8"
+      >
+        <div>
+          <h1 class="text-light">
+            book your free <br />
+            consultation now!
+          </h1>
+        </div>
+        <div>
+          <h6
+            style="
+              font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                'Helvetica Neue', sans-serif;
+            "
+            class="fw-normal text-light"
+          >
+            The following information will allow us to better <br />
+            understand your design goals. We’ll be in touch soon!
+          </h6>
+          <a href="/contact"
+            ><button
+              type="button"
+              class="btn"
+              style="
+                background-color: white;
+                padding: 5px 20px;
+                border-radius: 30px;
+                color: #245656;
+                margin-top: 15px;
+              "
+            >
+              Inquire Now!
+            </button></a
+          >
+        </div>
+      </div>
+
+      <!-- About 6 - Bootstrap Brain Component -->
+      <section class="bsb-about-6 py-3 py-md-5 py-xl-8">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+              <h2 class="mb-4 display-5 text-center">Why Choose Us</h2>
+              <p class="text-dark mb-5 text-center lead fs-4">
+                Our commitment to excellence is evident in every project we
+                undertake, ensuring that you receive nothing but the highest
+                quality products and services.
+              </p>
+              <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle" />
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row gy-4 gy-lg-0 align-items-lg-center">
+            <div class="col-12 col-lg-6">
+              <img
+                class="img-fluid rounded border border-dark"
+                loading="lazy"
+                src="/images/300ppi/about.jpg"
+                alt="About 6"
+              />
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="row justify-content-xl-end">
+                <div class="col-12 col-xl-11">
+                  <div class="accordion accordion-flush" id="accordionAbout6">
+                    <div class="accordion-item mb-4 border border-dark">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button
+                          class="accordion-button bg-transparent fs-5 fw-bold"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                          style="color: #245656;"
+                        >
+                          WHY SHOULD I CHOOSE EAGAL CORPORATION?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse show"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionAbout6"
+                      >
+                        <div class="accordion-body">
+                          You should choose Eagal Corporation for their
+                          unmatched expertise, innovative solutions, extensive
+                          resources, meticulous project management, stringent
+                          quality assurance, and exceptional customer service.
+                          They excel in delivering top-notch results tailored to
+                          your specific needs and preferences.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item mb-4 border border-dark">
+                      <h2 class="accordion-header" id="headingTwo" >
+                        <button
+                          class="accordion-button collapsed bg-transparent fs-5 fw-bold"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                          style="color: #245656;"
+                        >
+                          WHY IS EAGAL CORPORATION BETTER THAN A REGULAR
+                          INTERIOR DESIGNER'S?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionAbout6"
+                      >
+                        <div class="accordion-body">
+                          Eagal Corporation surpasses regular interior designers
+                          with its expertise, innovative solutions, scale,
+                          project management capabilities, quality assurance,
+                          and exceptional customer service.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item mb-4 border border-dark">
+                      <h2 class="accordion-header" id="headingThree" >
+                        <button
+                          class="accordion-button collapsed bg-transparent fs-5 fw-bold"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                          style="color: #245656;"
+                        >
+                          WHAT MAKES EAGAL CORPORATION DIFFRENT FROM OTHER'S?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#accordionAbout6"
+                      >
+                        <div class="accordion-body">
+                          What sets Eagal Corporation apart from others is their
+                          unparalleled expertise, innovative approach, extensive
+                          resources, meticulous project management, stringent
+                          quality assurance standards, and commitment to
+                          exceptional customer service. They go above and beyond
+                          to deliver tailored solutions that exceed expectations
+                          and ensure the success of every project.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item mb-4 border border-dark">
+                      <h2 class="accordion-header" id="headingThree" >
+                        <button
+                          class="accordion-button collapsed bg-transparent fs-5 fw-bold"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                          style="color: #245656;"
+                        >
+                          WHAT YOU WILL GET IN EAGAL CORPORATION?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#accordionAbout6"
+                      >
+                        <div class="accordion-body">
+                          With Eagal Corporation, you'll receive expertly
+                          designed interiors, functional modular kitchens, and
+                          custom furniture, all crafted with exceptional quality
+                          and tailored to your preferences. Their personalized
+                          approach ensures your vision is brought to life with
+                          excellence.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%-include('./head/footer.ejs')%>
+
+    <!-- Javascript Files: Vendors -->
+    <script src="https://unpkg.com/jquery@3.6.1/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-packery@2.0.1/packery-mode.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5.0.0/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Javascript Files: Controllers -->
+    <script src="./assets/controller/project-1.js"></script>
+
+    <!-- BSB Body End -->
+  </body>
+</html>
