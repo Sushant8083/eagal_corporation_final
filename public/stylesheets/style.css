@@ -7,6 +7,19 @@ html,body{
     height: 100%;
     width: 100%;
 }
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('') format('otf'),
+       url('../fonts/cralika.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'MyCustomFont', sans-serif;
+}
+
 .main{
     height: 100%;
     width: 100%;
