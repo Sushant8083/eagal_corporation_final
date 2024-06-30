@@ -112,30 +112,54 @@
       margin: 20px auto;
       text-align: center;
     }
+
+    .custom-height {
+      height: 500px; /* Set your desired height */
+      object-fit: cover; /* To maintain aspect ratio and cover the area */
+    }
   </style>
 
   <body>
     <!-- Header -->
     <%-include('./head/header.ejs')%>
 
-    <!-- Hero 1 - Bootstrap Brain Component -->
-    <section
-      class="bsb-hero-1 px-3 bsb-overlay bsb-hover-pull"
-      style="background-image: url('/images/images\ \(16\)\ \(5\).jpeg.jpg')"
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
     >
-      <div class="container">
-        <div class="row justify-content-md-center">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
           <div
-            class="col-12 col-md-11 col-lg-9 col-xl-7 col-xxl-6 text-center text-white"
+            style="
+              height: 100%;
+              width: 100%;
+              position: absolute;
+              background-color: rgba(0, 0, 0, 0.459);
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              padding-left: 80px;
+            "
           >
-            <h1 class="display-4 fw-normal text-start mb-3">
+            <h1 class="display-4 fw-normal text-start mb-3 text-light">
               Welcome to <br />Eagle Corporation
             </h1>
-            <p class="lead text-start mb-5">
-              Powerful, extensible, and feature-packed frontend toolkit. Build
-              and customize with Sass, utilize prebuilt grid system and
-              components, and bring projects to life with powerful JavaScript
-              plugins.
+            <p
+              class="lead text-start mb-5 text-light fw-normal"
+              style="
+                font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                  'Helvetica Neue', sans-serif;
+              "
+            >
+              Elegant, versatile, and richly detailed furniture and interior
+              design solutions. <br />
+              Customize with premium materials, utilize innovative design
+              systems and <br />
+              components, and transform spaces with exquisite craftsmanship and
+              <br />
+              thoughtful detailing.
             </p>
             <div class="d-grid gap-2 d-sm-flex justify-content-start">
               <a href="/contact"
@@ -153,9 +177,142 @@
               >
             </div>
           </div>
+          <img
+            src="/images/images (16) (5).jpeg.jpg"
+            class="d-block w-100 custom-height"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <div
+            style="
+              height: 100%;
+              width: 100%;
+              position: absolute;
+              background-color: rgba(0, 0, 0, 0.459);
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              padding-left: 80px;
+            "
+          >
+            <h1 class="display-4 fw-normal text-start mb-3 text-light">
+              Welcome to <br />Eagle Corporation
+            </h1>
+            <p
+              class="lead text-start mb-5 text-light fw-normal"
+              style="
+                font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                  'Helvetica Neue', sans-serif;
+              "
+            >
+              Elegant, versatile, and richly detailed furniture and interior
+              design solutions. <br />
+              Customize with premium materials, utilize innovative design
+              systems and <br />
+              components, and transform spaces with exquisite craftsmanship and
+              <br />
+              thoughtful detailing.
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-start">
+              <a href="/contact"
+                ><button
+                  type="button"
+                  class="btn"
+                  style="
+                    background-color: white;
+                    padding: 5px 20px;
+                    border-radius: 30px;
+                  "
+                >
+                  Get Started!
+                </button></a
+              >
+            </div>
+          </div>
+          <img
+            src="/images/images (16) (14).jpeg.jpg"
+            class="d-block w-100 custom-height"
+            class="d-block w-100 custom-height"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <div
+            style="
+              height: 100%;
+              width: 100%;
+              position: absolute;
+              background-color: rgba(0, 0, 0, 0.459);
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              padding-left: 80px;
+            "
+          >
+            <h1 class="display-4 fw-normal text-start mb-3 text-light">
+              Welcome to <br />Eagle Corporation
+            </h1>
+            <p
+              class="lead text-start mb-5 text-light fw-normal"
+              style="
+                font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                  'Helvetica Neue', sans-serif;
+              "
+            >
+              Elegant, versatile, and richly detailed furniture and interior
+              design solutions. <br />
+              Customize with premium materials, utilize innovative design
+              systems and <br />
+              components, and transform spaces with exquisite craftsmanship and
+              <br />
+              thoughtful detailing.
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-start">
+              <a href="/contact"
+                ><button
+                  type="button"
+                  class="btn"
+                  style="
+                    background-color: white;
+                    padding: 5px 20px;
+                    border-radius: 30px;
+                  "
+                >
+                  Get Started!
+                </button></a
+              >
+            </div>
+          </div>
+          <img
+            src="/images/images (16) (19).jpeg.jpg"
+            class="d-block w-100 custom-height"
+            class="d-block w-100 custom-height"
+            alt="..."
+          />
         </div>
       </div>
-    </section>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
     <!-- Main -->
     <main id="main">
@@ -180,7 +337,7 @@
                   style="max-height: 50px"
                 />
                 <h5 class="m-2">Discovery</h5>
-                <p class="m-0 text-secondary">
+                <p class="m-0 text-dark" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
                   We will meet to discuss your desired outcomes and get to know
                   your design preferences. At this stage, your must haves will
                   become ours.
@@ -196,7 +353,7 @@
                   style="max-height: 50px"
                 />
                 <h5 class="m-2">Design</h5>
-                <p class="m-0 text-secondary">
+                <p class="m-0 text-dark" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
                   The vision begins to come to life with a detailed plan of
                   action. We will share our proposed selections (i.e. fine
                   furnishings, art, construction finishes) and incorporate your
@@ -213,7 +370,7 @@
                   style="max-height: 50px"
                 />
                 <h5 class="m-2">Delivery</h5>
-                <p class="m-0 text-secondary">
+                <p class="m-0 text-dark" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
                   We transform your space with a white glove approach, handling
                   all components of implementation before inviting you for a
                   final walk-through
@@ -225,7 +382,7 @@
       </section>
 
       <section class="py-5 py-md-8 py-xl-10">
-        <div class="container py-5">
+        <div class="container py-5" style="display: flex; flex-direction: column; align-items: center;">
           <h2 class="text-center mb-5">Our Services:</h2>
           <div class="service-container">
             <div class="service-card">
@@ -286,6 +443,7 @@
               </div>
             </div>
           </div>
+          <a href="/contact" class="btn py-2 px-3 rounded-pill mt-4" style="background-color: #245656; color: white;">Get Started</a>
         </div>
       </section>
 
@@ -388,7 +546,7 @@
           <div class="row justify-content-md-center">
             <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
               <h2 class="mb-4 display-5 text-center">Why Choose Us</h2>
-              <p class="text-dark mb-5 text-center lead fs-4">
+              <p class="text-dark mb-5 text-center lead fs-5 fw-normal" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
                 Our commitment to excellence is evident in every project we
                 undertake, ensuring that you receive nothing but the highest
                 quality products and services.
@@ -421,7 +579,7 @@
                           data-bs-target="#collapseOne"
                           aria-expanded="true"
                           aria-controls="collapseOne"
-                          style="color: #245656;"
+                          style="color: #245656"
                         >
                           WHY SHOULD I CHOOSE EAGAL CORPORATION?
                         </button>
@@ -432,7 +590,7 @@
                         aria-labelledby="headingOne"
                         data-bs-parent="#accordionAbout6"
                       >
-                        <div class="accordion-body">
+                        <div class="accordion-body" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
                           You should choose Eagal Corporation for their
                           unmatched expertise, innovative solutions, extensive
                           resources, meticulous project management, stringent
@@ -443,7 +601,7 @@
                       </div>
                     </div>
                     <div class="accordion-item mb-4 border border-dark">
-                      <h2 class="accordion-header" id="headingTwo" >
+                      <h2 class="accordion-header" id="headingTwo">
                         <button
                           class="accordion-button collapsed bg-transparent fs-5 fw-bold"
                           type="button"
@@ -451,7 +609,7 @@
                           data-bs-target="#collapseTwo"
                           aria-expanded="false"
                           aria-controls="collapseTwo"
-                          style="color: #245656;"
+                          style="color: #245656"
                         >
                           WHY IS EAGAL CORPORATION BETTER THAN A REGULAR
                           INTERIOR DESIGNER'S?
@@ -463,7 +621,7 @@
                         aria-labelledby="headingTwo"
                         data-bs-parent="#accordionAbout6"
                       >
-                        <div class="accordion-body">
+                        <div class="accordion-body"style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
                           Eagal Corporation surpasses regular interior designers
                           with its expertise, innovative solutions, scale,
                           project management capabilities, quality assurance,
@@ -472,7 +630,7 @@
                       </div>
                     </div>
                     <div class="accordion-item mb-4 border border-dark">
-                      <h2 class="accordion-header" id="headingThree" >
+                      <h2 class="accordion-header" id="headingThree">
                         <button
                           class="accordion-button collapsed bg-transparent fs-5 fw-bold"
                           type="button"
@@ -480,7 +638,7 @@
                           data-bs-target="#collapseThree"
                           aria-expanded="false"
                           aria-controls="collapseThree"
-                          style="color: #245656;"
+                          style="color: #245656"
                         >
                           WHAT MAKES EAGAL CORPORATION DIFFRENT FROM OTHER'S?
                         </button>
@@ -491,7 +649,7 @@
                         aria-labelledby="headingThree"
                         data-bs-parent="#accordionAbout6"
                       >
-                        <div class="accordion-body">
+                        <div class="accordion-body"style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
                           What sets Eagal Corporation apart from others is their
                           unparalleled expertise, innovative approach, extensive
                           resources, meticulous project management, stringent
@@ -503,7 +661,7 @@
                       </div>
                     </div>
                     <div class="accordion-item mb-4 border border-dark">
-                      <h2 class="accordion-header" id="headingThree" >
+                      <h2 class="accordion-header" id="headingThree">
                         <button
                           class="accordion-button collapsed bg-transparent fs-5 fw-bold"
                           type="button"
@@ -511,7 +669,7 @@
                           data-bs-target="#collapseThree"
                           aria-expanded="false"
                           aria-controls="collapseThree"
-                          style="color: #245656;"
+                          style="color: #245656"
                         >
                           WHAT YOU WILL GET IN EAGAL CORPORATION?
                         </button>
@@ -522,7 +680,7 @@
                         aria-labelledby="headingThree"
                         data-bs-parent="#accordionAbout6"
                       >
-                        <div class="accordion-body">
+                        <div class="accordion-body"style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
                           With Eagal Corporation, you'll receive expertly
                           designed interiors, functional modular kitchens, and
                           custom furniture, all crafted with exceptional quality
